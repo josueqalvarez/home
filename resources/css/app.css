@@ -1,0 +1,185 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../views/**/*.blade.php';
+@source '../js/**/*.js';
+
+@theme {
+    --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    --font-label-caps: 'JetBrains Mono', ui-monospace, monospace;
+    --font-code-sm: 'JetBrains Mono', ui-monospace, monospace;
+    --font-display-lg: 'Inter', sans-serif;
+    --font-display-lg-mobile: 'Inter', sans-serif;
+    --font-headline-md: 'Inter', sans-serif;
+    --font-headline-sm: 'Inter', sans-serif;
+    --font-body-lg: 'Inter', sans-serif;
+    --font-body-md: 'Inter', sans-serif;
+
+    /* Spacing & Layout */
+    --spacing-container-max: 1200px;
+    --spacing-margin-desktop: 64px;
+    --spacing-margin-mobile: 20px;
+    --spacing-gutter: 24px;
+    --spacing-section-gap: 120px;
+
+    /* Color Palette */
+    --color-surface: #f7f9fb;
+    --color-surface-dim: #d8dadc;
+    --color-surface-bright: #f7f9fb;
+    --color-surface-container-lowest: #ffffff;
+    --color-surface-container-low: #f2f4f6;
+    --color-surface-container: #eceef0;
+    --color-surface-container-high: #e6e8ea;
+    --color-surface-container-highest: #e0e3e5;
+    --color-surface-variant: #e0e3e5;
+    --color-on-surface: #191c1e;
+    --color-on-surface-variant: #45474c;
+    --color-inverse-surface: #2d3133;
+    --color-inverse-on-surface: #eff1f3;
+    --color-outline: #76777d;
+    --color-outline-variant: #c6c6cc;
+    --color-surface-tint: #585e6f;
+
+    --color-primary: #000000;
+    --color-on-primary: #ffffff;
+    --color-primary-container: #151b2a;
+    --color-on-primary-container: #7d8496;
+    --color-primary-fixed: #dce2f6;
+    --color-primary-fixed-dim: #c0c6da;
+    --color-on-primary-fixed: #151b2a;
+    --color-on-primary-fixed-variant: #404757;
+    --color-inverse-primary: #c0c6da;
+
+    --color-secondary: #0051d5;
+    --color-on-secondary: #ffffff;
+    --color-secondary-container: #316bf3;
+    --color-on-secondary-container: #fefcff;
+    --color-secondary-fixed: #dbe1ff;
+    --color-secondary-fixed-dim: #b4c5ff;
+    --color-on-secondary-fixed: #00174b;
+    --color-on-secondary-fixed-variant: #003ea8;
+
+    --color-tertiary: #000000;
+    --color-on-tertiary: #ffffff;
+    --color-tertiary-container: #001f26;
+    --color-on-tertiary-container: #0090a9;
+    --color-tertiary-fixed: #acedff;
+    --color-tertiary-fixed-dim: #4cd7f6;
+    --color-on-tertiary-fixed: #001f26;
+    --color-on-tertiary-fixed-variant: #004e5c;
+
+    --color-error: #ba1a1a;
+    --color-on-error: #ffffff;
+    --color-error-container: #ffdad6;
+    --color-on-error-container: #93000a;
+
+    --color-background: #f7f9fb;
+    --color-on-background: #191c1e;
+}
+
+/* Custom Utilities and Styles */
+.tech-grid {
+    background-image: 
+        linear-gradient(to right, rgba(0, 144, 169, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0, 144, 169, 0.05) 1px, transparent 1px);
+    background-size: 28px 28px;
+}
+
+.technical-bg {
+    background-image: 
+        linear-gradient(to right, rgba(0, 144, 169, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0, 144, 169, 0.04) 1px, transparent 1px);
+    background-size: 32px 32px;
+}
+
+.tech-node {
+    position: relative;
+}
+.tech-node-tl { position: absolute; top: -2px; left: -2px; width: 5px; height: 5px; background-color: #0090a9; z-index: 10; }
+.tech-node-tr { position: absolute; top: -2px; right: -2px; width: 5px; height: 5px; background-color: #0090a9; z-index: 10; }
+.tech-node-bl { position: absolute; bottom: -2px; left: -2px; width: 5px; height: 5px; background-color: #0090a9; z-index: 10; }
+.tech-node-br { position: absolute; bottom: -2px; right: -2px; width: 5px; height: 5px; background-color: #0090a9; z-index: 10; }
+
+.node { position: absolute; width: 4px; height: 4px; background-color: #0090a9; }
+.node-tl { top: -2px; left: -2px; }
+.node-tr { top: -2px; right: -2px; }
+.node-bl { bottom: -2px; left: -2px; }
+.node-br { bottom: -2px; right: -2px; }
+
+.ambient-glow {
+    box-shadow: 0 10px 40px -10px rgba(37, 99, 235, 0.06);
+}
+
+.ambient-glow-lg {
+    box-shadow: 0 16px 50px -12px rgba(37, 99, 235, 0.12);
+}
+
+.btn-primary {
+    background-color: #2563EB;
+    color: #FFFFFF;
+    border-radius: 0.25rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-primary:hover {
+    background-color: #1D4ED8;
+    box-shadow: 0 0 14px 2px rgba(0, 144, 169, 0.35);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f7f9fb; 
+}
+::-webkit-scrollbar-thumb {
+    background: #d8dadc; 
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #c6c6cc; 
+}
+
+/* Input active label for contact form */
+.input-active-label {
+    display: none;
+}
+input:focus + .input-active-label,
+textarea:focus + .input-active-label,
+select:focus + .input-active-label {
+    display: block;
+}
+
+/* Lazy Loading and Scroll Reveal Fade-in Animations */
+.reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+}
+
+.reveal.is-revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Stagger delay classes for smoother appearance */
+.reveal-delay-100 { transition-delay: 100ms; }
+.reveal-delay-200 { transition-delay: 200ms; }
+.reveal-delay-300 { transition-delay: 300ms; }
+.reveal-delay-400 { transition-delay: 400ms; }
+
+/* Image Fade-in effect */
+img[data-lazy] {
+    opacity: 0;
+    filter: blur(8px);
+    transition: opacity 0.6s ease-out, filter 0.6s ease-out, transform 0.7s ease-out;
+}
+
+img[data-lazy].loaded {
+    opacity: 1;
+    filter: blur(0px);
+}
