@@ -17,6 +17,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
 
+    @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @endif
+
     <!-- Tailwind CDN with fallback config for instant full-fidelity rendering -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script>
@@ -200,6 +204,38 @@
         img.lazy-img.loaded {
             opacity: 1;
         }
+
+        /* Cat paw swiping in from the right edge to slap the WhatsApp ball down */
+        @keyframes cat-paw-swipe {
+            0%, 8% { transform: translate(140px, -50px) rotate(35deg); opacity: 0; }
+            14% { transform: translate(10px, 6px) rotate(-20deg); opacity: 1; }
+            18% { transform: translate(0, 16px) rotate(-30deg); opacity: 1; }
+            26% { transform: translate(30px, -10px) rotate(10deg); opacity: 1; }
+            34%, 100% { transform: translate(140px, -50px) rotate(35deg); opacity: 0; }
+        }
+        .cat-paw-swipe {
+            animation: cat-paw-swipe 3s ease-in-out infinite;
+        }
+
+        /* WhatsApp ball reacting to the paw hit, like a dribbled basketball */
+        @keyframes wa-ball-dribble {
+            0%, 15% { transform: translateY(0); }
+            18% { transform: translateY(16px); }
+            24% { transform: translateY(-20px); }
+            30% { transform: translateY(6px); }
+            36% { transform: translateY(-9px); }
+            42% { transform: translateY(2px); }
+            48% { transform: translateY(-3px); }
+            55%, 100% { transform: translateY(0); }
+        }
+        .wa-ball-dribble {
+            animation: wa-ball-dribble 3s ease-in-out infinite;
+        }
+
+        /* FAQ accordion: slow open/close via grid-template-rows transition */
+        .faq-panel.is-open {
+            grid-template-rows: 1fr;
+        }
     </style>
 </head>
 <body class="bg-surface text-on-surface font-sans antialiased selection:bg-secondary-container selection:text-on-secondary min-h-screen flex flex-col">
@@ -213,6 +249,31 @@
 
     <!-- Footer -->
     <x-footer :active="$active" />
+
+    <!-- Floating WhatsApp Button -->
+    <div class="fixed bottom-6 right-6 z-50 overflow-visible">
+        <!-- Cat paw entering from the right edge of the screen to slap the ball down -->
+        <div class="cat-paw-swipe absolute -top-4 -right-2 pointer-events-none select-none" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="32" height="32" fill="#D9822B" class="drop-shadow-md">
+                <ellipse cx="32" cy="42" rx="18" ry="14"/>
+                <circle cx="14" cy="20" r="7"/>
+                <circle cx="28" cy="11" r="7"/>
+                <circle cx="42" cy="11" r="7"/>
+                <circle cx="54" cy="20" r="7"/>
+            </svg>
+        </div>
+
+        <a href="https://wa.me/51945589482?text=Hola%21+vengo+de+la+pagina+web%2C+estoy+interesado+en+..&utm_source=chatgpt.com"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Contactar por WhatsApp"
+           class="wa-ball-dribble relative flex items-center justify-center w-14 h-14 rounded-[50%] bg-[#25D366] text-white shadow-lg hover:bg-[#20bd5a] hover:scale-110 active:scale-95 transition-colors duration-300">
+            <span class="absolute inline-flex h-full w-full rounded-[50%] bg-[#25D366] opacity-75 "></span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor" class="relative" aria-hidden="true">
+                <path d="M12.04 2c-5.52 0-10 4.48-10 10 0 1.76.46 3.48 1.34 5L2 22l5.14-1.35c1.47.8 3.13 1.22 4.9 1.22h.01c5.52 0 10-4.48 10-10s-4.48-9.87-10.01-9.87zm0 18.15h-.01c-1.55 0-3.07-.42-4.4-1.2l-.32-.19-3.05.8.81-2.97-.21-.31A8.14 8.14 0 0 1 3.9 12c0-4.5 3.66-8.15 8.15-8.15 2.18 0 4.22.85 5.76 2.39a8.09 8.09 0 0 1 2.39 5.77c0 4.5-3.66 8.15-8.16 8.15zm4.47-6.1c-.24-.12-1.44-.71-1.67-.79-.22-.08-.39-.12-.55.12-.16.24-.63.79-.78.95-.14.16-.29.18-.53.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.44-1.35-1.68-.14-.24-.01-.37.11-.49.11-.11.24-.29.36-.43.12-.14.16-.24.24-.4.08-.16.04-.31-.02-.43-.06-.12-.55-1.33-.76-1.82-.2-.48-.4-.42-.55-.42-.14 0-.31-.02-.47-.02-.16 0-.43.06-.65.31-.22.24-.86.84-.86 2.05 0 1.21.88 2.38 1 2.54.12.16 1.74 2.65 4.21 3.72.59.25 1.05.4 1.41.52.59.19 1.13.16 1.55.1.47-.07 1.44-.59 1.65-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.46-.28z"/>
+            </svg>
+        </a>
+    </div>
 
     <!-- Lazy Loading & Fade-in Reveal JavaScript -->
     <script>
@@ -265,6 +326,19 @@
                     });
                 }
             }
+
+            // FAQ Accordion with slow open/close animation
+            document.querySelectorAll('.faq-toggle').forEach((toggle) => {
+                const panel = toggle.nextElementSibling;
+                const icon = toggle.querySelector('.faq-icon');
+                toggle.addEventListener('click', () => {
+                    const isOpen = panel.classList.toggle('is-open');
+                    toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+                    if (icon) {
+                        icon.classList.toggle('-rotate-180', isOpen);
+                    }
+                });
+            });
         });
     </script>
 </body>

@@ -41,8 +41,8 @@
                 </x-button>
             </div>
 
-            <div class="lg:col-span-7 lg:col-start-6 mt-12 lg:mt-0 reveal reveal-delay-200">
-                <div class="bg-surface-container-lowest border border-outline-variant/20 rounded-lg p-8 ambient-glow tech-node tech-node-br">
+            <div class="lg:col-span-7 mt-12 lg:mt-0 reveal reveal-delay-200">
+                <div class="bg-surface-container-lowest border border-outline-variant/20 rounded-lg p-8 ambient-glow tech-node">
                     <div class="mb-12">
                         <h3 class="font-headline-sm text-headline-sm text-primary mb-6 border-b border-outline-variant/10 pb-4">¿Qué puedo crear?</h3>
                         <ul class="space-y-6">
@@ -104,8 +104,8 @@
 
     <!-- Automatización Section -->
     <section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-24">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
-            <div class="lg:col-span-6 lg:order-2 reveal">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+            <div class="lg:col-span-6 sticky top-32 lg:order-2 reveal">
                 <div class="flex items-center gap-3 mb-4">
                     <span class="material-symbols-outlined text-secondary text-3xl" style="font-variation-settings: 'FILL' 0, 'wght' 300;">auto_mode</span>
                     <h2 class="font-headline-md text-headline-md text-primary">Automatización de procesos</h2>
@@ -162,52 +162,52 @@
             <div class="relative max-w-4xl mx-auto">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 relative z-10">
                     <!-- Manual State -->
-                    <div class="bg-surface-container-lowest border border-outline-variant/20 p-8 shadow-sm tech-node reveal reveal-delay-100 rounded-lg">
+                    <div class="bg-red-100 border border-red-300/60 p-8 shadow-sm tech-node reveal reveal-delay-100 rounded-lg">
                         <div class="flex items-center gap-2 mb-6">
-                            <span class="material-symbols-outlined text-outline">cancel</span>
-                            <h3 class="font-headline-sm text-headline-sm text-on-surface-variant">Estado Manual (Hoy)</h3>
+                            <span class="material-symbols-outlined text-red-500">cancel</span>
+                            <h3 class="font-headline-sm text-headline-sm text-red-900">Estado Manual (Hoy)</h3>
                         </div>
-                        <ul class="space-y-4 font-body-md text-body-md text-on-surface-variant opacity-75">
+                        <ul class="space-y-4 font-body-md text-body-md text-red-900/70">
                             <li class="flex items-center gap-3">
-                                <span class="w-1.5 h-1.5 bg-outline rounded-full shrink-0"></span>
+                                <span class="w-1.5 h-1.5 bg-red-400 rounded-full shrink-0"></span>
                                 Copias y pegas datos entre Excel y otras apps.
                             </li>
                             <li class="flex items-center gap-3">
-                                <span class="w-1.5 h-1.5 bg-outline rounded-full shrink-0"></span>
+                                <span class="w-1.5 h-1.5 bg-red-400 rounded-full shrink-0"></span>
                                 Envías el mismo email de bienvenida a cada cliente.
                             </li>
                             <li class="flex items-center gap-3">
-                                <span class="w-1.5 h-1.5 bg-outline rounded-full shrink-0"></span>
+                                <span class="w-1.5 h-1.5 bg-red-400 rounded-full shrink-0"></span>
                                 Pierdes información por no centralizarla.
                             </li>
                             <li class="flex items-center gap-3">
-                                <span class="w-1.5 h-1.5 bg-outline rounded-full shrink-0"></span>
+                                <span class="w-1.5 h-1.5 bg-red-400 rounded-full shrink-0"></span>
                                 Tu web está desactualizada y no carga rápido.
                             </li>
                         </ul>
                     </div>
 
                     <!-- Automatic State -->
-                    <div class="bg-surface-container-lowest border border-secondary/30 p-8 ambient-glow tech-node tech-node-br reveal reveal-delay-200 rounded-lg">
-                        <div class="flex items-center gap-2 mb-6">
-                            <span class="material-symbols-outlined text-secondary">check_circle</span>
-                            <h3 class="font-headline-sm text-headline-sm text-primary">Estado Optimizado</h3>
+                    <div class="bg-green-100 border border-green-400/60 ambient-glow tech-node reveal reveal-delay-200 rounded-lg p-8">
+                        <div class="flex items-center gap-2 mb-6 ">
+                            <span class="material-symbols-outlined text-green-600">check_circle</span>
+                            <h3 class="font-headline-sm text-headline-sm text-green-900">Estado Optimizado</h3>
                         </div>
-                        <ul class="space-y-4 font-body-md text-body-md text-on-surface">
+                        <ul class="space-y-4 font-body-md text-body-md text-green-900/80">
                             <li class="flex items-center gap-3">
-                                <div class="w-4 h-px bg-on-tertiary-container shrink-0"></div>
+                                <div class="w-4 h-px bg-green-600 shrink-0"></div>
                                 Sistemas interconectados en tiempo real.
                             </li>
                             <li class="flex items-center gap-3">
-                                <div class="w-4 h-px bg-on-tertiary-container shrink-0"></div>
+                                <div class="w-4 h-px bg-green-600 shrink-0"></div>
                                 Comunicaciones automáticas y personalizadas.
                             </li>
                             <li class="flex items-center gap-3">
-                                <div class="w-4 h-px bg-on-tertiary-container shrink-0"></div>
+                                <div class="w-4 h-px bg-green-600 shrink-0"></div>
                                 Datos centralizados, seguros y accesibles.
                             </li>
                             <li class="flex items-center gap-3">
-                                <div class="w-4 h-px bg-on-tertiary-container shrink-0"></div>
+                                <div class="w-4 h-px bg-green-600 shrink-0"></div>
                                 Sitio web moderno que captura clientes 24/7.
                             </li>
                         </ul>
@@ -223,7 +223,8 @@
         <div class="space-y-4">
             <x-faq-item 
                 question="¿Cuánto tiempo toma desarrollar un sitio web?" 
-                answer="Depende de la complejidad. Una Landing Page puede estar lista en 1-2 semanas, mientras que un sitio corporativo completo suele tomar entre 4 y 6 semanas. Todo comienza con una fase de planificación donde definimos los tiempos exactos." />
+                answer="Depende de la complejidad. Una Landing Page puede estar lista en 1-2 semanas, mientras que un sitio corporativo completo suele tomar entre 4 y 6 semanas. Todo comienza con una fase de planificación donde definimos los tiempos exactos." 
+                state="open"/>
 
             <x-faq-item 
                 question="¿Qué herramientas utilizas para automatizar?" 

@@ -92,5 +92,19 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    // 4. Phone Number Reveal Toggle
+    const phoneToggleBtn = document.getElementById('phone-toggle-btn');
+    const phoneNumber = document.getElementById('phone-number');
+
+    if (phoneToggleBtn && phoneNumber) {
+        phoneToggleBtn.addEventListener('click', () => {
+            phoneNumber.classList.toggle('max-w-0');
+            phoneNumber.classList.toggle('opacity-0');
+            phoneNumber.classList.toggle('max-w-xs');
+            phoneNumber.classList.toggle('opacity-100');
+            phoneNumber.classList.toggle('ml-2');
+        });
+    }
 });
 

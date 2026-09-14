@@ -6,7 +6,7 @@
                 <x-badge text="Consultoría & Desarrollo" class="mb-6" />
                 
                 <h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6">
-                    Ayudo a negocios a trabajar mejor con tecnología.
+                    Josue Q. Alvarez
                 </h1>
                 
                 <p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-2xl">
@@ -21,6 +21,32 @@
                         Ver proyectos
                     </x-button>
                 </div>
+
+                <div class="flex items-center gap-4 mt-8">
+                    <a href="https://wa.me/51945589482?text=Hola%21+vengo+de+la+pagina+web%2C+estoy+interesado+en+..&utm_source=chatgpt.com" target="_blank" aria-label="WhatsApp" class="text-on-surface-variant hover:text-[#2563EB] transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true">
+                            <path d="M12.04 2c-5.52 0-10 4.48-10 10 0 1.76.46 3.48 1.34 5L2 22l5.14-1.35c1.47.8 3.13 1.22 4.9 1.22h.01c5.52 0 10-4.48 10-10s-4.48-9.87-10.01-9.87zm0 18.15h-.01c-1.55 0-3.07-.42-4.4-1.2l-.32-.19-3.05.8.81-2.97-.21-.31A8.14 8.14 0 0 1 3.9 12c0-4.5 3.66-8.15 8.15-8.15 2.18 0 4.22.85 5.76 2.39a8.09 8.09 0 0 1 2.39 5.77c0 4.5-3.66 8.15-8.16 8.15zm4.47-6.1c-.24-.12-1.44-.71-1.67-.79-.22-.08-.39-.12-.55.12-.16.24-.63.79-.78.95-.14.16-.29.18-.53.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.44-1.35-1.68-.14-.24-.01-.37.11-.49.11-.11.24-.29.36-.43.12-.14.16-.24.24-.4.08-.16.04-.31-.02-.43-.06-.12-.55-1.33-.76-1.82-.2-.48-.4-.42-.55-.42-.14 0-.31-.02-.47-.02-.16 0-.43.06-.65.31-.22.24-.86.84-.86 2.05 0 1.21.88 2.38 1 2.54.12.16 1.74 2.65 4.21 3.72.59.25 1.05.4 1.41.52.59.19 1.13.16 1.55.1.47-.07 1.44-.59 1.65-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.46-.28z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/jqalvarezz/" target="_blank" aria-label="Instagram" class="text-on-surface-variant hover:text-[#2563EB] transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                            <rect x="3" y="3" width="18" height="18" rx="5"/>
+                            <circle cx="12" cy="12" r="4"/>
+                            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.tiktok.com/@josueqalvarezz" target="_blank" aria-label="TikTok" class="text-on-surface-variant hover:text-[#2563EB] transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true">
+                            <path d="M16.5 2c.3 1.8 1.4 3.3 3 4.2.8.5 1.7.8 2.5.9v3.2c-1.6-.1-3.1-.6-4.4-1.5v6.6c0 3.6-2.9 6.6-6.6 6.6S4.4 18.9 4.4 15.4c0-3.6 2.9-6.6 6.6-6.6.3 0 .6 0 .9.1v3.3c-.3-.1-.6-.1-.9-.1-1.8 0-3.3 1.5-3.3 3.3s1.5 3.3 3.3 3.3 3.3-1.5 3.3-3.3V2h2.2z"/>
+                        </svg>
+                    </a>
+                    <button type="button" id="phone-toggle-btn" aria-label="Mostrar número de teléfono" class="text-on-surface-variant hover:text-[#2563EB] transition-colors flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                            <path d="M6.6 10.8c1.2 2.4 3.2 4.4 5.6 5.6l1.9-1.9c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.3 21 3 13.7 3 4.9c0-.6.4-1 1-1h3.1c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.3 0 .7-.2 1l-1.9 1.9z"/>
+                        </svg>
+                        <span id="phone-number" class="ml-0 max-w-0 opacity-0 overflow-hidden whitespace-nowrap transition-all duration-300 font-body-md text-body-md">+51 945 589 482</span>
+                    </button>
+                </div>
             </div>
 
             <div class="md:col-span-5 relative h-96 md:h-full min-h-100 mt-12 md:mt-0 reveal reveal-delay-200">
@@ -29,11 +55,17 @@
                     <div class="tech-node-tr"></div>
                     <div class="tech-node-bl"></div>
                     <div class="tech-node-br"></div>
+                    @php
+                        $profileImagePath = storage_path('app/public/Josueqalvarez.png');
+                        $profileImage = file_exists($profileImagePath)
+                           ? 'data:image/png;base64,' . base64_encode(file_get_contents($profileImagePath))
+                           : '';
+                    @endphp
                     <img loading="lazy" 
                          decoding="async"
-                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9MTBi7c93mkBjMv7dh2LaY6MIO-yweVz6HwOrP_9Gh86XXjwlOVgvbqPyNIAtBtSEBAiGDnV75CKmxhGUnETdt-nebNQkKqdevHr0RkpvvCA2CY9GL_plMuu79_6AO6WdwJZJ8_KTGW8VYl5ZGaqIBR25yI0xUJUrYIpNxK-R4xyxylu1sVz2jH0A5T5GjMbITy4Uc4PsaQ_GZIFJ4ijF27n_i45pQirv3_pz_9CcU7JjWWmoegmnIA" 
-                         alt="Composición abstracta de tecnología y nodos de conexión" 
-                         class="lazy-img w-full h-full object-cover opacity-90 mix-blend-multiply">
+                        src="{{ $profileImage }}"
+                         alt="Josue Quichca" 
+                         class="lazy-img object-cover opacity-90 mix-blend-multiply">
                 </div>
             </div>
         </div>
@@ -59,24 +91,17 @@
                     <!-- Problem Items -->
                     <div class="flex items-start bg-white/5 p-6 rounded border border-white/10 hover:border-on-tertiary-container/40 transition-colors reveal reveal-delay-100">
                         <span class="text-on-tertiary-container mr-4 mt-1 font-label-caps text-label-caps font-semibold">01</span>
-                        <p class="font-body-md text-body-md text-white/90">Copiar información entre herramientas</p>
+                        <p class="font-body-md text-body-md text-white/90">Responder las mismas preguntas una y otra vez</p>
                     </div>
                     <div class="flex items-start bg-white/5 p-6 rounded border border-white/10 hover:border-on-tertiary-container/40 transition-colors reveal reveal-delay-200">
                         <span class="text-on-tertiary-container mr-4 mt-1 font-label-caps text-label-caps font-semibold">02</span>
-                        <p class="font-body-md text-body-md text-white/90">Repetir las mismas tareas todos los días</p>
+                        <p class="font-body-md text-body-md text-white/90">Hacer tareas repetitivas todos los días</p>
                     </div>
                     <div class="flex items-start bg-white/5 p-6 rounded border border-white/10 hover:border-on-tertiary-container/40 transition-colors reveal reveal-delay-300">
                         <span class="text-on-tertiary-container mr-4 mt-1 font-label-caps text-label-caps font-semibold">03</span>
-                        <p class="font-body-md text-body-md text-white/90">Gestionar información manualmente</p>
+                        <p class="font-body-md text-body-md text-white/90">Preparar el resumen mensual de resultados</p>
                     </div>
-                    <div class="flex items-start bg-white/5 p-6 rounded border border-white/10 hover:border-on-tertiary-container/40 transition-colors reveal reveal-delay-400">
-                        <span class="text-on-tertiary-container mr-4 mt-1 font-label-caps text-label-caps font-semibold">04</span>
-                        <p class="font-body-md text-body-md text-white/90">No tener una presencia digital profesional</p>
-                    </div>
-                    <div class="flex items-start bg-white/5 p-6 rounded border border-white/10 hover:border-on-tertiary-container/40 transition-colors reveal reveal-delay-400">
-                        <span class="text-on-tertiary-container mr-4 mt-1 font-label-caps text-label-caps font-semibold">05</span>
-                        <p class="font-body-md text-body-md text-white/90">Depender demasiado de procesos manuales</p>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -84,12 +109,12 @@
 
     <!-- SERVICIOS SECTION (Reusable Service Cards Component) -->
     <section class="bg-surface py-section-gap" id="servicios">
-        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop ">
             <div class="mb-16 md:w-2/3 reveal">
                 <x-badge text="Capacidades" class="mb-4" />
                 <h2 class="font-headline-md text-headline-md text-primary">Soluciones que puedo crear para tu negocio</h2>
             </div>
-            <div class="grid md:grid-cols-2 gap-8">
+            <div class="grid md:grid-cols-2 items-start gap-8">
                 <x-service-card 
                     title="Sitios web" 
                     icon="web" 
@@ -99,7 +124,7 @@
                 <x-service-card 
                     title="Automatización de procesos" 
                     icon="account_tree" 
-                    :items="['Flujos automáticos', 'Integraciones', 'Formularios', 'Notificaciones', 'Procesos personalizados']"
+                    :items="['Dashboards', 'Chatbots', 'Formularios', 'Flujos automáticos', 'Procesos personalizados']"
                     class="reveal reveal-delay-200" />
             </div>
 
