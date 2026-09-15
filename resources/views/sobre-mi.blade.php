@@ -12,7 +12,7 @@
                 </h1>
                 
                 <p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-lg">
-                    Desarrollo soluciones digitales para ayudar a negocios a trabajar mejor con tecnología. Sin complicaciones, directo al resultado.
+                    Llevo mas de 4 años en la industria, y estoy por culminar mis estudios de Ingenieria de Software. Apasionado por el emprendimiento y la creación de soluciones tecnológicas innovadoras.
                 </p>
                 
                 <div class="flex flex-col sm:flex-row gap-4">
@@ -90,25 +90,6 @@
         </div>
     </section>
 
-    <!-- Tecnología Section -->
-    <section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-gap">
-        <div class="text-center mb-16 max-w-2xl mx-auto reveal">
-            <x-badge text="Stack Tecnológico" class="mb-4" />
-            <h2 class="font-headline-md text-headline-md text-primary mb-6">Trabajo con tecnología para crear soluciones reales</h2>
-        </div>
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-            @php
-                $technologies = ['PHP / Laravel', 'JavaScript', 'MySQL', 'APIs REST', 'Git', 'Automatización'];
-            @endphp
-            @foreach($technologies as $index => $tech)
-                <div class="border border-outline-variant/20 p-6 rounded-lg bg-surface-container-lowest flex flex-col items-center justify-center gap-3 hover:shadow-[0_10px_30px_-10px_rgba(37,99,235,0.1)] transition-all tech-node tech-node-tl reveal reveal-delay-{{ ($index % 4 + 1) * 100 }}">
-                    <span class="font-code-sm text-code-sm text-on-surface-variant font-medium text-center">{{ $tech }}</span>
-                    <div class="h-px w-full bg-on-tertiary-container/20 mt-2"></div>
-                </div>
-            @endforeach
-        </div>
-    </section>
-
     <!-- Valores Section -->
     <section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap">
         <div class="border-t border-outline-variant/20 pt-16">
@@ -140,6 +121,39 @@
                         </li>
                     </ul>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tecnología Section -->
+    <section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-gap">
+        <div class="text-center mb-16 max-w-2xl mx-auto reveal">
+            <x-badge text="Stack Tecnológico (para programadores)" class="mb-4" />
+            <h2 class="font-headline-md text-headline-md text-primary mb-8">Utilizo distintos lenguajes de programación para crear soluciones efectivas</h2>
+            <p class="mb-10">
+                Entre algunos de los principales, están:
+            </p>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 text-left" aria-label="Tecnologías con las que trabajo">
+                @php
+                    $technologies = [
+                        ['name' => 'Python', 'slug' => 'python'],
+                        ['name' => 'MySQL', 'slug' => 'mysql'],
+                        ['name' => 'MongoDB', 'slug' => 'mongodb'],
+                        ['name' => 'GitHub', 'slug' => 'github'],
+                        ['name' => 'PHP', 'slug' => 'php'],
+                        ['name' => 'Laravel', 'slug' => 'laravel'],
+                        ['name' => 'HTML', 'slug' => 'html5'],
+                        ['name' => 'CSS', 'slug' => 'css'],
+                        ['name' => 'JavaScript', 'slug' => 'javascript'],
+                        ['name' => 'React', 'slug' => 'react'],
+                    ];
+                @endphp
+                @foreach($technologies as $index => $technology)
+                    <div class="border border-outline-variant/20 p-5 rounded-lg bg-surface-container-lowest flex flex-col items-center justify-center gap-3 hover:border-secondary/50 hover:shadow-[0_10px_30px_-10px_rgba(37,99,235,0.1)] transition-all tech-node reveal reveal-delay-{{ ($index % 4 + 1) * 100 }}">
+                        <img src="https://cdn.simpleicons.org/{{ $technology['slug'] }}/63d8ef" alt="Icono de {{ $technology['name'] }}" width="48" height="48" class="w-12 h-12 shrink-0 object-contain" loading="eager" decoding="async">
+                        <span class="font-code-sm text-code-sm text-on-surface-variant font-medium text-center">{{ $technology['name'] }}</span>
+                    </div>
+                @endforeach
             </div>
         </div>
     </section>

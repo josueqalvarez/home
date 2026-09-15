@@ -6,10 +6,10 @@
     <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
         <div class="md:col-span-5 mb-8 md:mb-0 ">
             <a href="{{ route('inicio') }}" class="font-headline-sm text-headline-sm font-bold text-primary block mb-3 hover:opacity-80 transition-opacity">
-                TechFreelancer
+                JOSUE Q ALVAREZ
             </a>
             <p class="font-body-md text-body-md text-on-surface-variant">
-                © {{ date('Y') }} TechFreelancer. Sitios web y automatización para negocios.
+                © {{ date('Y') }} Josue Q Alvarez. Sitios web y automatización para negocios.
             </p>
         </div>
         <div class="md:col-span-7 flex flex-col md:flex-row justify-end md:space-x-8 space-y-4 md:space-y-0">

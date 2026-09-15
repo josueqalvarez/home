@@ -308,11 +308,11 @@
                 answer="Depende de la complejidad. Una Landing Page puede estar lista en 1-2 semanas, mientras que un sitio corporativo completo suele tomar entre 4 y 6 semanas. Todo comienza con una fase de planificación donde definimos los tiempos exactos."
                 state="open" />
 
-            <x-faq-item question="¿Qué herramientas utilizas para automatizar?"
-                answer="Principalmente utilizo plataformas No-Code / Low-Code como Zapier, Make (Integromat), Airtable y herramientas nativas de los ecosistemas de Google Workspace o Microsoft 365, asegurando que sean fáciles de mantener para tu equipo." />
+            <x-faq-item question="¿La asesoría es gratuita?"
+                answer="Sí, la asesoría inicial es gratuita. Durante esta fase, evaluamos tus necesidades y te proponemos la mejor solución antes de iniciar cualquier proyecto." />
 
-            <x-faq-item question="¿Ofreces mantenimiento continuo?"
-                answer="Sí. Una vez finalizado el proyecto, ofrezco planes opcionales de mantenimiento para asegurar que el sitio web o las automatizaciones sigan funcionando perfectamente con el paso del tiempo, incluyendo actualizaciones de seguridad y monitoreo." />
+            <x-faq-item question="¿Hay garantía del servicio?"
+                answer="Sí, todos los servicios cuentan con garantía. Si surge algún problema dentro del período establecido, nos encargamos de solucionarlo sin costo adicional." />
         </div>
     </section>
 

@@ -26,7 +26,7 @@
                             </div>
                             <div>
                                 <div class="font-body-md text-body-md font-semibold text-primary">WhatsApp</div>
-                                <div class="font-code-sm text-code-sm text-on-surface-variant">+34 600 00 00 00</div>
+                                <div class="font-code-sm text-code-sm text-on-surface-variant">+51 945 589 482</div>
                             </div>
                         </a>
 
@@ -38,11 +38,11 @@
                             </div>
                             <div>
                                 <div class="font-body-md text-body-md font-semibold text-primary">Email</div>
-                                <div class="font-code-sm text-code-sm text-on-surface-variant">hola@techfreelancer.com</div>
+                                <div class="font-code-sm text-code-sm text-on-surface-variant">contacto@josueqalvarez.com</div>
                             </div>
                         </a>
 
-                        <a href="#" target="_blank" rel="noopener noreferrer" 
+                        <a href="https://www.linkedin.com/in/josueqalvarez/" target="_blank" rel="noopener noreferrer" 
                            class="group flex items-center gap-4 p-4 bg-surface-container-lowest border border-outline-variant/20 rounded-lg hover:border-secondary/30 transition-all shadow-sm relative overflow-hidden">
                             <div class="absolute inset-0 bg-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                             <div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-secondary">
@@ -50,7 +50,7 @@
                             </div>
                             <div>
                                 <div class="font-body-md text-body-md font-semibold text-primary">LinkedIn</div>
-                                <div class="font-code-sm text-code-sm text-on-surface-variant">/in/techfreelancer</div>
+                                <div class="font-code-sm text-code-sm text-on-surface-variant">/in/josueqalvarez/</div>
                             </div>
                         </a>
                     </div>
