@@ -18,11 +18,11 @@
     };
 
     $variantStyles = match($variant) {
-        'primary' => 'bg-[#2563EB] text-white hover:bg-[#1d4ed8] hover:shadow-[0_0_12px_rgba(0,144,169,0.4)]',
+        'primary' => 'bg-secondary text-on-secondary hover:bg-secondary-fixed-dim hover:shadow-[0_0_12px_rgba(99,216,239,0.4)]',
         'secondary' => 'bg-secondary text-on-secondary hover:bg-secondary-container hover:shadow-[0_0_14px_rgba(37,99,235,0.3)]',
-        'outline' => 'bg-transparent border border-[#0B1220] text-[#0B1220] hover:bg-surface-container-low',
-        'ghost' => 'text-[#2563EB] hover:text-[#1d4ed8] p-0 bg-transparent',
-        default => 'bg-[#2563EB] text-white hover:bg-[#1d4ed8]',
+        'outline' => 'bg-transparent border border-outline text-primary hover:bg-surface-container-low',
+        'ghost' => 'text-secondary hover:text-secondary-fixed-dim p-0 bg-transparent',
+        default => 'bg-secondary text-on-secondary hover:bg-secondary-fixed-dim',
     };
 
     $combinedClass = "{$baseStyles} {$sizeStyles} {$variantStyles} {$class}";

@@ -1,6 +1,6 @@
 @props([
-    'title' => '¿Tienes un proyecto en mente?',
-    'description' => 'Si buscas un desarrollador que entienda la parte técnica y la visión de negocio, hablemos.',
+    'title' => '¿Buscas asesoría?',
+    'description' => 'Si buscas enfrentar un problema específico en tu negocio',
     'buttonText' => 'Hablemos',
     'buttonLink' => null,
     'class' => ''

@@ -7,7 +7,7 @@
             <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
                 <div class="md:col-span-8 md:col-start-1 reveal">
                     <x-badge text="Portafolio de Trabajo" class="mb-6" />
-                    <h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-primary mb-6">
+                    <h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-primary mb-6 text-center md:text-left">
                         Proyectos que convierten ideas en soluciones.
                     </h1>
                     <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl border-l-2 border-on-tertiary-container pl-6">

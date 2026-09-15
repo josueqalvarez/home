@@ -17,7 +17,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
 
-    @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
+    @php($usingVite = file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
+    @if ($usingVite)
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     @endif
 
@@ -29,53 +30,53 @@
             theme: {
                 extend: {
                     colors: {
-                        "secondary-fixed-dim": "#b4c5ff",
-                        "on-secondary": "#ffffff",
-                        "secondary-container": "#316bf3",
-                        "outline-variant": "#c6c6cc",
-                        "on-tertiary-container": "#0090a9",
-                        "on-tertiary": "#ffffff",
-                        "on-secondary-fixed": "#00174b",
-                        "outline": "#76777d",
-                        "on-tertiary-fixed-variant": "#004e5c",
-                        "surface-container-lowest": "#ffffff",
-                        "surface-container-high": "#e6e8ea",
-                        "on-error": "#ffffff",
-                        "secondary": "#0051d5",
-                        "error-container": "#ffdad6",
-                        "background": "#f7f9fb",
-                        "tertiary-fixed": "#acedff",
-                        "tertiary-container": "#001f26",
-                        "on-primary-fixed-variant": "#404757",
-                        "secondary-fixed": "#dbe1ff",
-                        "inverse-primary": "#c0c6da",
-                        "on-surface-variant": "#45474c",
-                        "surface-bright": "#f7f9fb",
-                        "surface-variant": "#e0e3e5",
-                        "on-secondary-fixed-variant": "#003ea8",
-                        "on-tertiary-fixed": "#001f26",
-                        "on-background": "#191c1e",
-                        "surface-dim": "#d8dadc",
-                        "tertiary": "#000000",
-                        "on-secondary-container": "#fefcff",
-                        "surface-container-highest": "#e0e3e5",
-                        "primary": "#000000",
-                        "on-primary": "#ffffff",
-                        "primary-fixed-dim": "#c0c6da",
-                        "surface-container-low": "#f2f4f6",
-                        "primary-fixed": "#dce2f6",
-                        "surface": "#f7f9fb",
-                        "on-surface": "#191c1e",
-                        "surface-tint": "#585e6f",
-                        "inverse-on-surface": "#eff1f3",
-                        "on-primary-container": "#7d8496",
-                        "surface-container": "#eceef0",
-                        "on-error-container": "#93000a",
-                        "tertiary-fixed-dim": "#4cd7f6",
-                        "error": "#ba1a1a",
-                        "inverse-surface": "#2d3133",
-                        "primary-container": "#151b2a",
-                        "on-primary-fixed": "#151b2a"
+                        "secondary-fixed-dim": "#83d1e5",
+                        "on-secondary": "#061010",
+                        "secondary-container": "#176b70",
+                        "outline-variant": "#444444",
+                        "on-tertiary-container": "#d6d6d6",
+                        "on-tertiary": "#111111",
+                        "on-secondary-fixed": "#052424",
+                        "outline": "#8c8c8c",
+                        "on-tertiary-fixed-variant": "#555555",
+                        "surface-container-lowest": "#0c0c0c",
+                        "surface-container-high": "#1e1e1e",
+                        "on-error": "#2d0504",
+                        "secondary": "#63d8ef",
+                        "error-container": "#641515",
+                        "background": "#080808",
+                        "tertiary-fixed": "#ededed",
+                        "tertiary-container": "#303030",
+                        "on-primary-fixed-variant": "#4a4a4a",
+                        "secondary-fixed": "#b9efff",
+                        "inverse-primary": "#126079",
+                        "on-surface-variant": "#b4b4b4",
+                        "surface-bright": "#181818",
+                        "surface-variant": "#303030",
+                        "on-secondary-fixed-variant": "#145858",
+                        "on-tertiary-fixed": "#191919",
+                        "on-background": "#f2f2f2",
+                        "surface-dim": "#000000",
+                        "tertiary": "#c0c0c0",
+                        "on-secondary-container": "#c0ffff",
+                        "surface-container-highest": "#272727",
+                        "primary": "#f2f2f2",
+                        "on-primary": "#080808",
+                        "primary-fixed-dim": "#bdbdbd",
+                        "surface-container-low": "#111111",
+                        "primary-fixed": "#e3e3e3",
+                        "surface": "#080808",
+                        "on-surface": "#f2f2f2",
+                        "surface-tint": "#72d9ef",
+                        "inverse-on-surface": "#080808",
+                        "on-primary-container": "#d0d0d0",
+                        "surface-container": "#171717",
+                        "on-error-container": "#ffb4ab",
+                        "tertiary-fixed-dim": "#c2c2c2",
+                        "error": "#ff8a80",
+                        "inverse-surface": "#f2f2f2",
+                        "primary-container": "#242424",
+                        "on-primary-fixed": "#171717"
                     },
                     borderRadius: {
                         "DEFAULT": "0.125rem",
@@ -146,14 +147,14 @@
             box-shadow: 0 10px 40px -10px rgba(37, 99, 235, 0.06);
         }
         .btn-primary {
-            background-color: #2563EB;
-            color: #FFFFFF;
+            background-color: #63d8ef;
+            color: #06131e;
             border-radius: 4px;
             transition: all 0.3s ease;
         }
         .btn-primary:hover {
-            background-color: #1D4ED8;
-            box-shadow: 0 0 12px 2px rgba(0, 144, 169, 0.35);
+            background-color: #9aeafa;
+            box-shadow: 0 0 12px 2px rgba(99, 216, 239, 0.35);
         }
 
         /* Custom UI Scrollbar */
@@ -161,14 +162,14 @@
             width: 8px;
         }
         ::-webkit-scrollbar-track {
-            background: #f7f9fb; 
+            background: #080808; 
         }
         ::-webkit-scrollbar-thumb {
-            background: #d8dadc; 
+            background: #444444; 
             border-radius: 4px;
         }
         ::-webkit-scrollbar-thumb:hover {
-            background: #c6c6cc; 
+            background: #63d8ef; 
         }
 
         /* Input active label for contact form */
@@ -254,7 +255,7 @@
     <div class="fixed bottom-6 right-6 z-50 overflow-visible">
         <!-- Cat paw entering from the right edge of the screen to slap the ball down -->
         <div class="cat-paw-swipe absolute -top-4 -right-2 pointer-events-none select-none" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="32" height="32" fill="#D9822B" class="drop-shadow-md">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="32" height="32" fill="#f38ba8" class="drop-shadow-md">
                 <ellipse cx="32" cy="42" rx="18" ry="14"/>
                 <circle cx="14" cy="20" r="7"/>
                 <circle cx="28" cy="11" r="7"/>
@@ -275,7 +276,8 @@
         </a>
     </div>
 
-    <!-- Lazy Loading & Fade-in Reveal JavaScript -->
+    <!-- Lazy Loading & Fade-in Reveal JavaScript (fallback when Vite assets aren't built) -->
+    @unless ($usingVite)
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             // Scroll Reveal Observer
@@ -341,5 +343,6 @@
             });
         });
     </script>
+    @endunless
 </body>
 </html>

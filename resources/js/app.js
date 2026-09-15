@@ -106,5 +106,18 @@ document.addEventListener('DOMContentLoaded', () => {
             phoneNumber.classList.toggle('ml-2');
         });
     }
+
+    // 5. FAQ Accordion with slow open/close animation
+    document.querySelectorAll('.faq-toggle').forEach((toggle) => {
+        const panel = toggle.nextElementSibling;
+        const icon = toggle.querySelector('.faq-icon');
+        toggle.addEventListener('click', () => {
+            const isOpen = panel.classList.toggle('is-open');
+            toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            if (icon) {
+                icon.classList.toggle('-rotate-180', isOpen);
+            }
+        });
+    });
 });
 

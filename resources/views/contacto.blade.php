@@ -6,7 +6,7 @@
                 <div class="lg:col-span-5 lg:pr-12 reveal">
                     <x-badge text="Contacto Directo" class="mb-6" />
                     
-                    <h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6">
+                    <h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6 text-center md:text-left">
                         Cuéntame qué necesitas.
                     </h1>
                     

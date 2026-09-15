@@ -7,8 +7,8 @@
                     <x-badge text="Perfil Profesional" />
                 </div>
                 
-                <h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6">
-                    Hola, soy <br/><span class="text-secondary">[Mi Nombre]</span>.
+                <h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6 text-center md:text-left">
+                    Hola, soy <br/><span class="text-secondary">Josue Q Alvarez</span>.
                 </h1>
                 
                 <p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-lg">
@@ -42,8 +42,9 @@
     <section class="bg-surface-container-low py-section-gap relative overflow-hidden">
         <div class="absolute inset-0 bg-tech-grid opacity-30 pointer-events-none"></div>
         <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
-                <div class="md:col-span-4 mb-10 md:mb-0 reveal">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter ">
+                <div class="md:col-span-4 mb-10 md:mb-0 reveal
+                text-primary sticky top-32">
                     <h2 class="font-headline-md text-headline-md text-primary mb-4">Mi forma de trabajar</h2>
                     <p class="font-body-md text-body-md text-on-surface-variant">
                         La tecnología debe ser un facilitador, no un obstáculo. Mi enfoque se centra en la claridad estructural y la eficiencia.

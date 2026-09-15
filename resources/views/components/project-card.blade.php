@@ -58,7 +58,7 @@
                 </div>
             @endif
 
-            <a href="{{ $link }}" class="inline-flex items-center text-[#2563EB] font-label-caps text-label-caps hover:translate-x-2 transition-transform uppercase tracking-widest font-semibold group/link">
+            <a href="{{ $link }}" class="inline-flex items-center text-secondary font-label-caps text-label-caps hover:translate-x-2 transition-transform uppercase tracking-widest font-semibold group/link">
                 {{ $linkText }}
                 <span class="material-symbols-outlined ml-2 text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
             </a>

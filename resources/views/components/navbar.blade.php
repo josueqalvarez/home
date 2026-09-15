@@ -32,7 +32,7 @@
         <!-- Desktop CTA -->
         <div class="hidden md:block">
             <a href="{{ route('contacto') }}" 
-               class="inline-flex items-center justify-center bg-[#2563EB] text-white px-6 py-3 rounded hover:bg-[#1d4ed8] hover:shadow-[0_0_8px_rgba(0,144,169,0.5)] transition-all duration-300 font-medium active:scale-95 {{ $active === 'contacto' ? 'ring-2 ring-secondary ring-offset-2' : '' }}">
+               class="inline-flex items-center justify-center bg-secondary text-on-secondary px-6 py-3 rounded hover:bg-secondary-fixed-dim hover:shadow-[0_0_8px_rgba(99,216,239,0.5)] transition-all duration-300 font-medium active:scale-95 {{ $active === 'contacto' ? 'ring-2 ring-secondary ring-offset-2' : '' }}">
                 Hablemos
             </a>
         </div>
@@ -69,7 +69,7 @@
                 Sobre mí
             </a>
             <a href="{{ route('contacto') }}" 
-               class="inline-flex items-center justify-center bg-[#2563EB] text-white px-6 py-3 rounded hover:bg-[#1d4ed8] font-medium text-center mt-2">
+               class="inline-flex items-center justify-center bg-secondary text-on-secondary px-6 py-3 rounded hover:bg-secondary-fixed-dim font-medium text-center mt-2">
                 Hablemos
             </a>
         </div>

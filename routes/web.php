@@ -7,6 +7,15 @@ Route::get('/', function () {
     return view('inicio');
 })->name('inicio');
 
+Route::get('/media/{filename}', function (string $filename) {
+    abort_unless($filename === basename($filename), 404);
+
+    $path = storage_path('app/public/' . $filename);
+    abort_unless(is_file($path), 404);
+
+    return response()->file($path);
+})->where('filename', '.*')->name('media');
+
 Route::get('/servicios', function () {
     return view('servicios');
 })->name('servicios');
