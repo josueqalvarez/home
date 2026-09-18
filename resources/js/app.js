@@ -111,8 +111,28 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.faq-toggle').forEach((toggle) => {
         const panel = toggle.nextElementSibling;
         const icon = toggle.querySelector('.faq-icon');
+        const faqGroup = toggle.closest('.space-y-4');
+
         toggle.addEventListener('click', () => {
-            const isOpen = panel.classList.toggle('is-open');
+            const isOpen = !panel.classList.contains('is-open');
+
+            if (isOpen && faqGroup) {
+                faqGroup.querySelectorAll('.faq-toggle').forEach((otherToggle) => {
+                    if (otherToggle === toggle) {
+                        return;
+                    }
+
+                    const otherPanel = otherToggle.nextElementSibling;
+                    const otherIcon = otherToggle.querySelector('.faq-icon');
+                    otherPanel.classList.remove('is-open');
+                    otherToggle.setAttribute('aria-expanded', 'false');
+                    if (otherIcon) {
+                        otherIcon.classList.remove('-rotate-180');
+                    }
+                });
+            }
+
+            panel.classList.toggle('is-open', isOpen);
             toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
             if (icon) {
                 icon.classList.toggle('-rotate-180', isOpen);

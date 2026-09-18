@@ -11,7 +11,7 @@
 @endphp
 
 <section {{ $attributes->merge(['class' => "max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop my-20 reveal {$class}"]) }}>
-    <div class="bg-surface-container-high rounded-xl p-12 md:p-20 text-center relative overflow-hidden border border-outline-variant/10 shadow-sm">
+    <div class="bg-surface-container-high rounded-xl p-6 sm:p-10 md:p-20 text-center relative overflow-hidden border border-outline-variant/10 shadow-sm">
         <div class="absolute inset-0 tech-grid opacity-30 pointer-events-none"></div>
         <div class="relative z-10 max-w-2xl mx-auto">
             <h2 class="font-headline-md text-headline-md text-primary mb-6">{{ $title }}</h2>

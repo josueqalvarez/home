@@ -11,8 +11,8 @@
                     Hola, soy <br/><span class="text-secondary">Josue Q Alvarez</span>.
                 </h1>
                 
-                <p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-lg">
-                    Llevo mas de 4 años en la industria, y estoy por culminar mis estudios de Ingenieria de Software. Apasionado por el emprendimiento y la creación de soluciones tecnológicas innovadoras.
+                <p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-lg max-sm:text-center">
+                    Cuento con más de 4 años de experiencia en tecnología. Soy un apasionado por el emprendimiento. Me encantan la idea de automatizar procesos de negocios, y usar la tecnología de la mano con la administración ¿Algún día los robots nos remplazarán?
                 </p>
                 
                 <div class="flex flex-col sm:flex-row gap-4">
@@ -26,12 +26,18 @@
             </div>
 
             <div class="md:col-span-5 lg:col-span-5 lg:col-start-8 mt-12 md:mt-0 relative reveal reveal-delay-200">
-                <div class="absolute inset-0 bg-tech-grid opacity-50 -z-10 translate-x-4 translate-y-4 rounded-lg"></div>
-                <div class="relative bg-surface-container-lowest border border-outline-variant/20 rounded-lg p-2 ambient-glow tech-node tech-node-tl tech-node-br">
-                    <img loading="lazy" 
+                <div class="absolute inset-0 bg-tech-grid opacity-50 -z-10 md:translate-x-4 translate-y-4 rounded-lg"></div>
+                <div class="relative w-full bg-surface-container-lowest border border-outline-variant/20 rounded-lg p-2 ambient-glow tech-node">
+                    @php
+                        $aboutImagePath = storage_path('app/public/sobre mi.png');
+                        $aboutImage = file_exists($aboutImagePath)
+                            ? 'data:image/png;base64,' . base64_encode(file_get_contents($aboutImagePath))
+                            : '';
+                    @endphp
+                    <img loading="lazy"
                          decoding="async"
-                         class="lazy-img w-full h-auto aspect-3/4 object-cover rounded shadow-sm" 
-                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNyZ6qqSqa9ByrA4gjeZ-4blnVTGWIYYjQGqdLHRreUQ_kFV4fCZU1C7XC7_LBmuXtpBjtCmLosD_ytiOc2JGIW1B-VUJGjg4Rr-hDX4tM3BxBDPSWZAdltz6d5TOmFKLNvEuTzUJg19uXce60phrj9hsqVVWI0omePkN_voW4QOlHb59t8n06KqOHio0OLpFMkiMFEN5O64Gou5QaQ74AfyLbbynYfYICsf2PZj_oYsXuifDYDGdmbQ"
+                         class="w-full h-auto aspect-3/4 object-cover rounded shadow-sm"
+                         src="{{ $aboutImage }}"
                          alt="Foto de perfil profesional"/>
                 </div>
             </div>
@@ -39,12 +45,12 @@
     </section>
 
     <!-- Mi Enfoque Section -->
-    <section class="bg-surface-container-low py-section-gap relative overflow-hidden">
+    <section class="bg-surface-container-low py-section-gap relative">
         <div class="absolute inset-0 bg-tech-grid opacity-30 pointer-events-none"></div>
         <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
             <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter ">
                 <div class="md:col-span-4 mb-10 md:mb-0 reveal
-                text-primary sticky top-32">
+                text-primary md:sticky md:top-32 self-start">
                     <h2 class="font-headline-md text-headline-md text-primary mb-4">Mi forma de trabajar</h2>
                     <p class="font-body-md text-body-md text-on-surface-variant">
                         La tecnología debe ser un facilitador, no un obstáculo. Mi enfoque se centra en la claridad estructural y la eficiencia.
@@ -95,7 +101,7 @@
         <div class="border-t border-outline-variant/20 pt-16">
             <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
                 <div class="md:col-span-4 reveal">
-                    <h2 class="font-headline-md text-headline-md text-primary sticky top-32">Lo que puedes esperar de mí</h2>
+                    <h2 class="font-headline-md text-headline-md text-primary md:sticky md:top-32">Lo que puedes esperar de mí</h2>
                 </div>
                 <div class="md:col-span-7 md:col-start-6">
                     <ul class="space-y-12">

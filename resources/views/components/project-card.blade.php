@@ -5,6 +5,7 @@
     'description',
     'technologies' => [],
     'image',
+    'video' => null,
     'imageAlt' => 'Vista previa del proyecto',
     'link' => '#',
     'linkText' => 'Ver proyecto',
@@ -23,11 +24,19 @@
     <div class="grid grid-cols-1 md:grid-cols-12 gap-0 overflow-hidden rounded">
         <!-- Image Column -->
         <div class="md:col-span-7 bg-surface-container h-64 md:h-auto min-h-75 relative overflow-hidden {{ $reversed ? 'order-1 md:order-2' : '' }}">
-            <img loading="lazy" 
-                 decoding="async"
-                 src="{{ $image }}" 
-                 alt="{{ $imageAlt }}" 
-                 class="lazy-img w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+            @if($video)
+                  <video autoplay muted loop playsinline preload="auto" aria-hidden="true" tabindex="-1"
+                       class="w-full h-full object-cover transition-transform duration-700 blur-[3px]"
+                      role="presentation">
+                    <source src="{{ $video }}" type="video/mp4">
+                </video>
+            @else
+                <img loading="lazy"
+                     decoding="async"
+                     src="{{ $image }}"
+                     alt="{{ $imageAlt }}"
+                     class="lazy-img w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+            @endif
             <div class="absolute inset-0 bg-primary/5 group-hover:bg-transparent transition-colors duration-700 pointer-events-none"></div>
         </div>
 

@@ -8,13 +8,13 @@
 
                 <h1
                     class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6 text-center md:text-left">
-                    Josue Q. Alvarez
+                    ¿Listo para impulsar tu negocio?
                 </h1>
 
                 <p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-2xl">
-                    Con más de 4 años en tecnología, me dedico a convertir ideas en realidad usando tecnología. Sin
-                    embargo, disfruto más de automatizar procesos, ya que considero que todo emprendedor no debe repetir
-                    las mismas tareas todo el día, sino enfocarse en lo que realmente importa.
+                    ¡Hola! Me llamo Josue, y, con mas de 4 años de experiencia en tecnología, me dedico a convertir
+                    ideas en realidad usando tecnología. Me apasiona el emprendimiento y crear soluciones tecnológicas
+                    personalizadas para cada situación, en especial la automatización.
                 </p>
 
                 <div class="flex flex-col sm:flex-row gap-4">
@@ -87,10 +87,11 @@
         style="background-image: linear-gradient(to right, rgba(99, 216, 239, 0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(99, 216, 239, 0.04) 1px, transparent 1px);">
 
         <div
-            class="mx-auto px-margin-mobile md:px-margin-desktop py-20 gap-gutter items-center flex flex-col justify-center w-7/12 text-center">
+            class="mx-auto px-margin-mobile md:px-margin-desktop py-16 md:py-20 gap-gutter items-center flex flex-col justify-center w-full md:w-7/12 text-center">
             <div class=" reveal">
                 <h3 class="font-headline-md text-headline-md leading-snug">
-                    NO CONTINUES, a menos que lo que busques sea automatizar tu negocio y llevarlo al <i><u>siguiente nivel</u></i>.
+                    NO CONTINUES, a menos que lo que busques sea mejorar tu negocio y llevarlo al <i><u>siguiente
+                            nivel</u></i>.
                 </h3>
             </div>
         </div>
@@ -101,7 +102,7 @@
         style="background-image: linear-gradient(to right, rgba(99, 216, 239, 0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(99, 216, 239, 0.04) 1px, transparent 1px);">
 
         <div
-            class="w-8/12 mx-auto px-margin-mobile md:px-margin-desktop py-section-gap gap-gutter items-center flex flex-col justify-center">
+            class="w-full md:w-8/12 mx-auto px-margin-mobile md:px-margin-desktop py-16 md:py-section-gap gap-gutter items-center flex flex-col justify-center">
             <div class=" reveal">
                 <h2 class="font-headline-md text-headline-md mb-6 leading-snug text-center">
                     ¿Cómo saber si puedo ayudarte?
@@ -109,14 +110,14 @@
                 <p class="font-body-md text-body-md text-on-surface">
                     Observa los siguientes casos, y responde si haces alguno manualmente.
                 </p>
-                <div class="grid gap-4 p-10">
+                <div class="grid gap-4 p-4 sm:p-6 md:p-10">
                     <!-- Problem Items -->
                     <div
                         class="flex items-start bg-surface-container-low/70 p-6 rounded border border-outline-variant/30 hover:border-on-tertiary-container/40 transition-colors reveal reveal-delay-100">
                         <span
                             class="text-on-tertiary-container mr-4 mt-1 font-label-caps text-label-caps font-semibold">01</span>
-                        <p class="font-body-md text-body-md text-on-surface">Responder las mismas preguntas una y
-                            otra vez</p>
+                        <p class="font-body-md text-body-md text-on-surface">Responder las mismas preguntas una y otra
+                            vez</p>
                     </div>
                     <div
                         class="flex items-start bg-surface-container-low/70 p-6 rounded border border-outline-variant/30 hover:border-on-tertiary-container/40 transition-colors reveal reveal-delay-200">
@@ -138,13 +139,13 @@
                 <div class="flex md:col-span-6 mt-12 md:mt-0">
                     <p class="font-body-md text-body-md text-on-surface mb-4">
                         Si respondiste que sí a alguno de los problemas anteriores,
-                    </p>
-                    <a class=" items-center text-secondary font-medium hover:text-secondary-fixed-dim transition-colors group"
-                        href="{{ route('contacto') }}">
-                         hablemos
-                        <span class="ml-2 transform group-hover:translate-x-1 transition-transform">→</span>
-                    </a>
 
+                        <a class="  text-secondary font-medium hover:text-secondary-fixed-dim transition-colors group hover:underline"
+                            href="{{ route('contacto') }}">
+                            hablemos
+                            <span class="ml-2 transform group-hover:translate-x-1 transition-transform">→</span>
+                        </a>
+                    </p>
                 </div>
             </div>
         </div>
@@ -155,7 +156,7 @@
         <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop ">
             <div class="mb-16 md:w-2/3 reveal">
                 <x-badge text="Capacidades" class="mb-4" />
-                <h2 class="font-headline-md text-headline-md text-primary">Soluciones que puedo crear para tu negocio
+                <h2 class="font-headline-md text-headline-md text-primary max-sm:text-center">Soluciones que puedo crear para tu negocio
                 </h2>
             </div>
             <div class="grid md:grid-cols-2 items-start gap-8">
@@ -177,12 +178,12 @@
     <!-- PROYECTOS DESTACADOS SECTION -->
     <section class="bg-surface-container-low py-section-gap border-t border-outline-variant/10">
         <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 reveal">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 reveal ">
                 <div>
                     <x-badge text="Portafolio" class="mb-4" />
-                    <h2 class="font-headline-md text-headline-md text-primary">Proyectos destacados</h2>
+                    <h2 class="font-headline-md text-headline-md text-primary  max-sm:text-center">Proyectos destacados</h2>
                 </div>
-                <div class="mt-4 md:mt-0">
+                <div class="mt-4 md:mt-0 max-sm:text-center">
                     <a href="{{ route('proyectos') }}"
                         class="inline-flex items-center text-secondary font-medium hover:underline">
                         Ver todos los proyectos <span
@@ -192,12 +193,12 @@
             </div>
 
             <div class="space-y-12">
-                <x-project-card number="01" category="Aplicación Web" title="FinDash Analytics"
-                    description="Plataforma de análisis financiero en tiempo real. Desarrollada para procesar grandes volúmenes de datos transaccionales, ofreciendo visualizaciones limpias y reportes automatizados."
-                    :technologies="['React', 'Node.js', 'PostgreSQL']"
+                <x-project-card number="01" category="Automatización" title="Envio de Mensajes Masivos"
+                    description="Aplicación de escritorio diseñada para el envío masivo de mensajes independiente de cualquier cuenta de Whatsapp."
+                    :technologies="['Python', 'Selenium', 'MySQL']"
                     image="https://lh3.googleusercontent.com/aida-public/AB6AXuDYlqlP6j511NcgJtRyXGwAgMAP9ek6-McR5JRMJ99PCronzE6cgxwT4XUe0AEWhWuWGkWTUelOns6Gdxz5U67p5N3xe_WyBOFIGdyETWeL_JUFOdlQ_XyzRNixNTL2D6LItMSnCnVLVMh6oHnNyWDopMLDZVb_V2BvioCgwKwdd9UViy2ouXeMmpJdkjhz4N1FYL-w1jtNT2QWUxkZEV2-xXD48_azok443jQ1NZevwLUKMVNJOzBBlQ"
-                    imageAlt="FinDash Analytics Dashboard" :link="route('proyectos')" linkText="Ver proyecto"
-                    class="reveal" />
+                    :video="asset('videos/envio-de-mensajes-masivos.mp4')" imageAlt="Envio de Mensajes Masivos"
+                    :link="route('proyectos')" linkText="Ver proyecto" class="reveal" />
             </div>
         </div>
     </section>

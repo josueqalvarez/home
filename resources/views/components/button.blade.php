@@ -13,7 +13,7 @@
     
     $sizeStyles = match($size) {
         'sm' => 'px-4 py-2 text-sm rounded',
-        'lg' => 'px-8 py-4 text-body-lg rounded',
+        'lg' => 'px-5 sm:px-8 py-4 text-body-lg rounded',
         default => 'px-6 py-3 font-body-md text-body-md rounded',
     };
 

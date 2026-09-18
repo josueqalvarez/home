@@ -296,6 +296,13 @@
                         </ul>
                     </div>
                 </div>
+
+                <div class="mt-10 text-center reveal reveal-delay-300">
+                    <x-button :href="route('contacto')" variant="primary" size="lg" icon="arrow_forward"
+                        iconPosition="right">
+                        Evaluar mejoras para mi negocio
+                    </x-button>
+                </div>
             </div>
         </div>
     </section>
@@ -308,12 +315,17 @@
                 answer="Depende de la complejidad. Una Landing Page puede estar lista en 1-2 semanas, mientras que un sitio corporativo completo suele tomar entre 4 y 6 semanas. Todo comienza con una fase de planificación donde definimos los tiempos exactos."
                 state="open" />
 
+            <x-faq-item question="¿Cuánto tiempo toma automatizar mi negocio?"
+                answer="Depende de la complejidad y del alcance de la automatización. Algunas tareas pueden automatizarse en mínimo 2 días, mientras que procesos más complejos pueden requerir varias semanas de desarrollo y pruebas." />
+
             <x-faq-item question="¿La asesoría es gratuita?"
                 answer="Sí, la asesoría inicial es gratuita. Durante esta fase, evaluamos tus necesidades y te proponemos la mejor solución antes de iniciar cualquier proyecto." />
 
             <x-faq-item question="¿Hay garantía del servicio?"
                 answer="Sí, todos los servicios cuentan con garantía. Si surge algún problema dentro del período establecido, nos encargamos de solucionarlo sin costo adicional." />
         </div>
+        
+    
     </section>
 
     <!-- CTA Section -->

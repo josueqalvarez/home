@@ -6,7 +6,7 @@
     <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center h-20">
         <!-- Brand -->
         <a href="{{ route('inicio') }}" class="font-headline-sm text-headline-sm font-bold text-primary hover:opacity-80 transition-all duration-300">
-            Josue Q. Alvarez
+            JOSUE Q. ALVAREZ
         </a>
 
         <!-- Desktop Navigation Links -->
